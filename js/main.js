@@ -19,10 +19,17 @@ $('.product-slider').owlCarousel({
 $('.news-slider').owlCarousel({
     loop:true,
     center: true,
-    margin:500,
-    items:3,
+    margin:50,
     nav:true,
     navText: ["<img src='../img/news-left.svg'> geri","irəli<img src='../img/news-right.svg'>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
 })
 $(".filter-1-first").click(function(){
     $(this).parent().toggleClass('active')
@@ -43,7 +50,7 @@ $('.loc-btn').click(function(){
 });
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    console.log(scroll)
+    // console.log(scroll)
     if (scroll >= 0) {
         var $i = $('#i');
         var $window = $(window);
@@ -88,4 +95,7 @@ $(window).scroll(function() {
     }else{
         $(".about-page-block:nth-child(3) .about-page-text").removeClass("active");
     }
+});
+$(".down-img").click(function(event) {
+    $("html, body").animate({ scrollTop: "+=650px" }, 800);
 });

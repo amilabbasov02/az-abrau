@@ -92,10 +92,10 @@ header .social a{
     max-width: 65%;
     margin-top: 35px;
 }
-#home{
+#home {
     background: url("../img/home-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 .home-1{
     height: 80vh;
@@ -1395,4 +1395,14 @@ footer{
     right: 0;
     bottom: auto;
     z-index: -1;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 99px;
+    max-height: 418px;
+}
+#about .col-6 img{
+    width: 100%;
 }
