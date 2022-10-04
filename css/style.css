@@ -384,7 +384,6 @@ section{
     position: relative;
 }
 .news-slider .item img{
-    width: 702px !important;
     height: 295px !important;
 }
 #news-page .item img{
@@ -1300,10 +1299,11 @@ footer{
 #line{
     position: relative;
 }
-.texture-1{
+.texture-1 {
     position: absolute;
     left: 0;
     bottom: -250px;
+    z-index: -1;
 }
 #about {
     position: relative;

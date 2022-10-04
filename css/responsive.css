@@ -78,6 +78,37 @@
         font-size: 16px;
         line-height: 18px;
     }
+    .news-slider{
+        padding: 0 20px;
+    }
+    .gif-text {
+        max-width: 55%;
+    }
+    .gif-head {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .gif .btn{
+        margin-top: 25px;
+    }
+    .az-head, .ru-head {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #about .col-5{
+        width: 100%;
+        order: 1;
+        margin-top: 30px;
+    }
+    #about .col-6{
+        width: 100%;
+    }
+    #about .btn{
+        margin-top: 25px;
+    }
+    .product-slider .btn{
+        margin-top: 25px;
+    }
 }
 @media only screen and (max-width: 768px){
     header, footer{
@@ -183,6 +214,30 @@
     .product:nth-child(2n) .products-right-border {
         display: none;
     }
+    .gif-text {
+        max-width: 100%;
+    }
+    #products{
+        padding-top: 50px;
+    }
+    .home-1 img{
+        max-width: 400px;
+    }
+    .home-text {
+        margin-top: 15px;
+    }
+    .home-2 .home-text {
+        max-width: 60%;
+        margin-top: 0px !important;
+    }
+    .home-2 .head-text {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .about-head {
+        font-size: 40px;
+        line-height: 43px;
+    }
 }
 @media only screen and (max-width: 576px){
     .page-text {
@@ -267,5 +322,58 @@
     }
     .border-bottom {
         width: 100%;
+    }
+    .gif-head {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .gif-body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .gif .btn {
+        margin-top: 10px;
+    }
+    .az-head, .ru-head {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .brends .container .az-brends {
+        left: 15px;
+        top: 20px;
+    }
+    .brends .container .ru-brends {
+        right: 25px;
+        bottom: 20px;
+    }
+    .az-head, .ru-head {
+        max-width: 99%;
+    }
+    .brends .btn{
+        width: 100px;
+    }
+    .home-1 img {
+        max-width: 250px;
+    }
+    .home-2 .head-text {
+        font-size: 43px;
+        line-height: 40px;
+    }
+    .gif img {  
+        height: 250px;
+    }
+    .ru-head{
+        text-align: right;
+    }
+    .brends img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .news-slider .owl-stage-outer {
+        height: 275px;
+    }
+    .product-slider .center img {
+        width: auto !important;
+        max-height: 350px;
     }
 }

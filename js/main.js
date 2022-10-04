@@ -26,7 +26,10 @@ $('.news-slider').owlCarousel({
         0:{
             items:1
         },
-        1000:{
+        992:{
+            items: 2
+        },
+        1200:{
             items:3
         }
     }
