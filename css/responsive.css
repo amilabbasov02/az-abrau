@@ -6,6 +6,23 @@
     section {
         padding-top: 60px !important;
     }
+    .about-number {
+        font-size: 165px;
+        line-height: 250px;
+    }
+    .about-page-head {
+        font-size: 42px;
+        line-height: 49px;
+        left: 128px;
+        top: 60px;
+    }
+    .about-page-block:nth-child(2n) .about-page-head {
+        right: 100px;
+        left: auto;
+    }
+    .about-page-block {
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 992px){
     .maps .col-4{
@@ -108,6 +125,46 @@
     }
     .product-slider .btn{
         margin-top: 25px;
+    }
+    .about-page-block {
+        min-height: 800px;
+        display: flex;
+        justify-content: center;
+    }
+    .about-page-img {
+        max-width: 100%;
+        width: 100%;
+        right: auto;
+        top: 165px;
+    }
+    .about-number {
+        left: auto;
+    }
+    .about-page-head {
+        left: 55%;
+        top: 60px;
+    }
+    .about-page-text {
+        left: auto;
+        padding: 20px;
+    }
+    .about-page-img img {
+        width: calc(100% - 1px);
+    }
+    .about-page-text.active {
+        transform: translateY(-100px);
+    }
+    .about-page-block:nth-child(2n) .about-page-text {
+        right: auto;
+        left: auto;
+    }
+    .about-page-block:nth-child(2n) .about-number {
+        right: auto;
+        left: auto;
+    }
+    .about-page-block:nth-child(2n) .about-page-head {
+        right: 25%;
+        left: auto;
     }
 }
 @media only screen and (max-width: 768px){
@@ -237,6 +294,14 @@
     .about-head {
         font-size: 40px;
         line-height: 43px;
+    }
+    .about-page-head {
+        left: 60%;
+        top: 60px;
+    }
+    .about-page-block:nth-child(2n) .about-page-head {
+        right: 15%;
+        left: auto;
     }
 }
 @media only screen and (max-width: 576px){
@@ -375,5 +440,24 @@
     .product-slider .center img {
         width: auto !important;
         max-height: 350px;
+    }
+    .about-page-text {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .about-page-img img {
+        width: calc(100% - 1px);
+        height: 100%;
+        object-fit: cover;
+    }
+    .about-page-block:nth-child(2n) .about-page-head {
+        right: 0;
+        left: auto;
+    }
+    .about-page-text.active {
+        transform: translateY(-20px);
+    }
+    .about-page-text{
+        transform: translateY(80px);
     }
 }

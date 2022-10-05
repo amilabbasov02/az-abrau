@@ -1253,13 +1253,22 @@ footer{
     position: absolute;
     right: 0;
 }
+.about-page-img img{
+    width: 100%;
+}
+#about i{
+    display: none;
+}
+#line i{
+    display: none;
+}
 .about-page-block{
     position: relative;
     min-height: 732px;
     width: 100%;
     margin: 50px 0;
 }
-.about-page-text{
+.about-page-text {
     font-size: 18px;
     line-height: 26px;
     color: #000000;
@@ -1267,7 +1276,8 @@ footer{
     background: #E7D2BB;
     padding: 50px;
     position: absolute;
-    width: 830px;
+    max-width: 830px;
+    width: 100%;
     bottom: 0;
     left: 100px;
     transition: 0.5s all ease-in-out;
