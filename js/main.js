@@ -53,8 +53,7 @@ $('.loc-btn').click(function(){
 });
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    // console.log(scroll)
-    if (scroll >= 0) {
+    if (scroll >= 0 && scroll < 1200 ) {
         var $i = $('#i');
         var $window = $(window);
         var offset = 50;
@@ -63,21 +62,81 @@ $(window).scroll(function() {
         function grow() {
             var scrollPercentage = 100 * $window.scrollTop() / ($('html').height() - $window.height());
             var maxHeight = $(window).height() - (offset * 3) - minHeight;
-            var newHeight = ((maxHeight / 50) * scrollPercentage) + minHeight;
+            var newHeight = ((maxHeight / 30) * scrollPercentage) + minHeight;
             $i.css('height', newHeight);
         }
     }
     if (scroll >= 1200) {
-        var $i = $('#i2');
+        var $i2 = $('#i2');
         var $window = $(window);
         var offset = 50;
-        var minHeight = 10;
-        $window.on('scroll resize', grow);
-        function grow() {
-            var scrollPercentage = 100 * $window.scrollTop() / ($('html').height() - $window.height());
-            var maxHeight = $(window).height() - (offset * 3) - minHeight;
-            var newHeight = ((maxHeight / 50) * scrollPercentage) + minHeight;
-            $i.css('width', newHeight);
+        var minHeight = 0;
+        
+    // console.log($('html').height()+"____html height")
+    // console.log($window.height()+"____window height")
+        $i2.css('width', "10%");
+        $window.on('scroll resize', grow2);
+        function grow2() {
+            
+            // var scrollPercentage = 0;
+            // var scrollPercentage = 100 * $window.scrollTop() / ($('html').height() - $window.height());
+            // var maxHeight = $(window).height() - (offset * 3) - minHeight;
+            // var newHeight = ((maxHeight / 50) * scrollPercentage) + minHeight;
+            
+            var maxHeight = ($window.scrollTop() - $(window).height()) / 100
+            var newHeight = maxHeight*20
+            // console.log(scrollPercentage+"___scrollPercentage")
+            // console.log(maxHeight+"___maxHeight")
+            // console.log(newHeight+"____newHeight")
+            $i2.css('width', newHeight+"%");
+        }
+    }
+    if (scroll >= 1200) {
+        var $i3 = $('#i3');
+        var $window = $(window);
+        var offset = 50;
+        var minHeight = 0;
+        
+    // console.log($('html').height()+"____html height")
+    // console.log($window.height()+"____window height")
+        $i3.css('height', "10%");
+        $window.on('scroll resize', grow3);
+        function grow3() {
+            var maxHeight = ($window.scrollTop() - $(window).height()) / 100
+            var newHeight = maxHeight*10
+            $i3.css('height', newHeight+"%");
+        }
+    }
+    if (scroll >= 2000) {
+        var $i4 = $('#i4');
+        var $window = $(window);
+        var offset = 50;
+        var minHeight = 0;
+        
+    // console.log($('html').height()+"____html height")
+    // console.log($window.height()+"____window height")
+        $i4.css('width', "10%");
+        $window.on('scroll resize', grow4);
+        function grow4() {
+            var maxHeight = ($window.scrollTop() - $(window).height()) / 100
+            var newHeight = maxHeight*5
+            $i4.css('width', newHeight+"%");
+        }
+    }
+    if (scroll >= 2200) {
+        var $i5 = $('#i5');
+        var $window = $(window);
+        var offset = 50;
+        var minHeight = 0;
+        
+    // console.log($('html').height()+"____html height")
+    // console.log($window.height()+"____window height")
+        $i5.css('width', "10%");
+        $window.on('scroll resize', grow5);
+        function grow5() {
+            var maxHeight = ($window.scrollTop() - $(window).height()) / 100
+            var newHeight = maxHeight*5
+            $i5.css('height', newHeight+"%");
         }
     }
 });
@@ -98,7 +157,24 @@ $(window).scroll(function() {
     }else{
         $(".about-page-block:nth-child(3) .about-page-text").removeClass("active");
     }
+    if(scroll >= 50){
+        $("header").addClass("active")
+    }else{
+        $("header").removeClass("active")
+    }
 });
 $(".down-img").click(function(event) {
     $("html, body").animate({ scrollTop: "+=650px" }, 800);
 });
+$(".mobile-nav").click(function(){
+    $("header .container:nth-child(2)").addClass("active")
+})
+$(".close-nav").click(function(){
+    $("header .container:nth-child(2)").removeClass("active")
+})
+$(".open-search").click(function(){
+    $(".search").addClass("active")
+})
+$(".close-search").click(function(){
+    $(".search").removeClass("active")
+})
