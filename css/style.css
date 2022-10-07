@@ -1433,6 +1433,9 @@ footer{
 #about {
     position: relative;
 }
+.about-page{
+    padding-bottom: 200px;
+}
 .texture-2{
     position: absolute;
     right: 0;
