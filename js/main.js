@@ -34,6 +34,42 @@ $('.news-slider').owlCarousel({
         }
     }
 })
+$('.awards-slider').owlCarousel({
+    loop:true,
+    center: true,
+    margin:10,
+    nav:true,
+    navText: ["<img src='../img/news-left.svg'> geri","irəli<img src='../img/news-right.svg'>"],
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+$('.awards2-slider').owlCarousel({
+    loop:true,
+    center: true,
+    margin:10,
+    nav:true,
+    // navText: ["<img src='../img/news-left.svg'> geri","irəli<img src='../img/news-right.svg'>"],
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 $(".filter-1-first").click(function(){
     $(this).parent().toggleClass('active')
 });

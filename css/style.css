@@ -474,22 +474,26 @@ section{
 footer{
     margin-top: 120px !important;
 }
-.news-slider .owl-nav{
+.news-slider .owl-nav,
+.awards-slider .owl-nav{
     display: flex !important;
     width: 100%;
     justify-content: center;
     margin-top: 20px;
 }
-.news-slider .owl-prev{
+.news-slider .owl-prev,
+.awards-slider .owl-prev{
     margin-right: 80px;
 }
-.news-slider .owl-nav img{
+.news-slider .owl-nav img,
+.awards-slider .owl-nav img{
     border: 1px solid #E60E07;
     border-radius: 3px;
     padding: 5px;
     margin: 5px;
 }
-.news-slider .owl-nav button{
+.news-slider .owl-nav button,
+.awards-slider .owl-nav button{
     display: flex;
     align-items: center;
     font-size: 12px !important;
@@ -1458,6 +1462,12 @@ footer{
     flex-direction: column;
     justify-content: center;
 }
+.awards-slider .owl-stage-outer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .news-slider .item .texture-3 img{
     width: 100% !important;
     height: 100% !important;
@@ -1466,7 +1476,8 @@ footer{
     width: 100% !important;
     height: 100% !important;
 }
-.owl-carousel .news-slider .owl-stage-outer{
+.owl-carousel .news-slider .owl-stage-outer,
+.owl-carousel .awards-slider .owl-stage-outer{
     height: 100%;
 }
 .texture-4{
@@ -1533,4 +1544,41 @@ footer{
 }
 #about .col-6 img{
     width: 100%;
+}
+#awards .item{
+    max-width: 121px;
+    max-height: 152px;
+    position: relative;
+}
+#awards .owl-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.award-text {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #292929;
+    font-family: 'arno-pro-regular','sans-serif';
+    position: absolute;
+    bottom: -70px;
+    max-width: 133px;
+}
+.awards-head{
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: #974D24;
+    width: 100%;
+    text-align: left;
+    margin-left: 65px;
+    margin-bottom: 10px;
+}
+.awards2-slider .owl-stage-outer{
+    height: 300px;
+}
+.awards2-slider .owl-nav{
+    display: none !important;
 }
